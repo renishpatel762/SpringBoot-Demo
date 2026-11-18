@@ -17,7 +17,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @ControllerAdvice
-public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
+public class  GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
     // Handle specific exceptions
     @ExceptionHandler(ResourceNotFoundException.class)

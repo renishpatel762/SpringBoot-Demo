@@ -17,6 +17,6 @@ public interface ProductRepo extends JpaRepository<Product, UUID> {
     List<Product> findByName(@Param("name") String name);
 
     // Native SQL query (uses actual table + column names)
-    @Query(value = "SELECT * FROM products WHERE category = :caategory", nativeQuery = true)
+    @Query(value = "SELECT * FROM products WHERE category = :category", nativeQuery = true)
     List<Product> findByCategory(@Param("category") String category);
 }
